@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-dashboard-pod
+spec:
+  serviceAccountName: dashboard
+  containers:
+  - name: my-dashboard
+    image: nginx
